@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <a href="/anhhunglau-7b113/us-central1/crawler/add-site">[+] Add</a>
+    {% if data %}
+        <ul>
+        {% for doc in data %}
+            <li>
+                <b>{{doc.site}}</b>
+                - {{doc.site_link}}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
