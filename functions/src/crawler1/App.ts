@@ -12,6 +12,7 @@ nunjucks.configure('views', {
     express: App
 });
 App.set('view engine', 'html');
+App.use(express.static('public'))
 App.use(routes);
 
 App.use(function (err: any, req: any, res: any, next: any) {

@@ -54,7 +54,7 @@
         }
 
     </style>
-    {% block head %}{% endblock %}
+    
 </head>
 <body>
     <header>
@@ -92,8 +92,27 @@
         </div>
       </header>
       <main role="main">
-        {% block content %}{% endblock %}
+        
+
+        <h1>Convert Image to Grayscale</h1>
+
+<canvas id="can">
+</canvas>
+<canvas id="can2">
+</canvas>
+<p>
+  <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()" >
+</p>
+<p>
+  <input type="button" value="Make Grayscale" onclick="shyn()" >
+</p>
       </main>
-      
+      <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+    <!-- Load BodyPix -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@1.1.0"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+    </script>
+    <script src="/js/BodyPix.js"></script>
 </body>
 </html>

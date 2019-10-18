@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<img id='image' src='images/person.jpg' crossorigin='anonymous'/>
+{% endblock %}
+{% block head %}
+<!-- Load TensorFlow.js -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+<!-- Load BodyPix -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+<script src="/js/BodyPix.js"></script>
+{% endblock %}

@@ -12,4 +12,5 @@ export const listsiteAction = async (req: any, res: any) => {
     res.render('list-site', {
         data: result
     })
+    
 }
